@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HyperLocal Community</string>
+    <string name="main_activity_title">Local Feed</string>
+    <string name="settings_activity_title">Settings</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="settings_enable_notifications">Enable Notifications</string>
+    <string name="about_dialog_title">About HyperLocal Community</string>
+    <string name="about_dialog_message">Welcome to HyperLocal Community!\n\nThis app helps you connect with your local neighborhood.\n\nVersion: 1.0.0\n\nInstructions:\n- Browse announcements on the main feed.\n- Explore SkillShare to connect with neighbors.\n- Check settings to manage your preferences.</string>
+    <string name="about_dialog_ok_button">OK</string>
+    <string name="announcements_title_main_screen">Local Announcements</string>
+
+    <string name="placeholder_announcement_title">Announcement Title</string>
+    <string name="placeholder_announcement_description">This is a brief description of the announcement.</string>
+    <string name="placeholder_announcement_date">Date / Time</string>
+
+    <string name="title_announcements">Announcements</string>
+    <string name="title_skillshare">SkillShare</string>
+
+    <string name="skillshare_type_offer_skill">Offering a Skill</string>
+    <string name="skillshare_type_request_skill">Requesting a Skill</string>
+    <string name="skillshare_type_hobby_connect">Connect for a Hobby</string>
+
+    <string name="skillshare_category_tech">Tech Help</string>
+    <string name="skillshare_category_crafts">Crafts &amp; Arts</string>
+    <string name="skillshare_category_languages">Languages</string>
+    <string name="skillshare_category_sports">Sports &amp; Fitness</string>
+    <string name="skillshare_category_home">Home &amp; Garden</string>
+    <string name="skillshare_category_tutoring">Tutoring &amp; Learning</string>
+    <string name="skillshare_category_other">Other</string>
+
+    <string name="placeholder_skillshare_title">Skill / Hobby Title</string>
+    <string name="placeholder_skillshare_description">Brief description of the skill offer, request, or hobby connection.</string>
+    <string name="posted_by">Posted by: %1$s</string>
+    <string name="category_label">Category: %1$s</string>
+    <string name="type_label">Type: %1$s</string>
+
+    <string name="create_post_activity_title">New SkillShare Post</string>
+    <string name="hint_post_title">Title (e.g., Learn Guitar, Tennis Partner Needed)</string>
+    <string name="hint_post_description">Description (Provide details)</string>
+    <string name="hint_contact_info">Contact Info (Optional, e.g., \'DM for details\')</string>
+    <string name="button_submit_post">Submit Post</string>
+    <string name="label_post_type">Post Type:</string>
+    <string name="label_category">Category:</string>
+    <string name="post_submission_success">Post submitted successfully!</string>
+    <string name="post_submission_failed">Failed to submit post. Please try again.</string>
+    <string name="error_title_required">Title is required.</string>
+    <string name="error_description_required">Description is required.</string>
+    <string name="error_category_unselected">Please select a category.</string>
+
+    <string-array name="skill_share_categories_array">
+        <item>@string/skillshare_category_tech</item>
+        <item>@string/skillshare_category_crafts</item>
+        <item>@string/skillshare_category_languages</item>
+        <item>@string/skillshare_category_sports</item>
+        <item>@string/skillshare_category_home</item>
+        <item>@string/skillshare_category_tutoring</item>
+        <item>@string/skillshare_category_other</item>
+    </string-array>
+
+</resources>

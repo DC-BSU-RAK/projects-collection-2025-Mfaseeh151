@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_announcements"
+        android:icon="@drawable/ic_menu_announcements"
+        android:title="@string/title_announcements" />
+
+    <item
+        android:id="@+id/navigation_skillshare"
+        android:icon="@drawable/ic_menu_skillshare"
+        android:title="@string/title_skillshare" />
+</menu>

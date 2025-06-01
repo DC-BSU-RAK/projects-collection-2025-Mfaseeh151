@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pet Personality Calculator</string>
+    <string name="calculate_personality">Calculate Personality</string>
+    <string name="background_description">Background image of pets</string>
+</resources>

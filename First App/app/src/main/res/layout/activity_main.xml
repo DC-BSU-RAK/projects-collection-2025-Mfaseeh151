@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 🔳 Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop" />
+
+    <!-- 🟫 Dark Overlay for readability -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AA000000" />
+
+    <!-- 🪟 Main Card View -->
+    <LinearLayout
+        android:id="@+id/contentCard"
+        android:layout_width="315dp"
+        android:layout_height="520dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_card"
+        android:elevation="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 🐾 Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Pet Personality Calculator"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- 🐶 Spinner: Pet Type -->
+        <Spinner
+            android:id="@+id/petTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/spinner_background"
+            android:popupBackground="#FFFFFF" />
+
+        <!-- 🧠 Spinner: Behavior -->
+        <Spinner
+            android:id="@+id/petBehaviorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/spinner_background"
+            android:popupBackground="#FFFFFF" />
+
+        <!-- ✅ Calculate Button -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Calculate Personality"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/instructionsButton"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FF9800"
+            android:padding="16dp"
+            android:text="Instructions"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</FrameLayout>

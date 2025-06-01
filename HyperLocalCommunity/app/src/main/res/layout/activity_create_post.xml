@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CreatePostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New SkillShare / Hobby Post"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Type:"
+            android:textSize="16sp"/>
+        <RadioGroup
+            android:id="@+id/radioGroupPostType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <RadioButton
+                android:id="@+id/radioButtonOfferSkill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skillshare_type_offer_skill"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/radioButtonRequestSkill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skillshare_type_request_skill"/>
+            <RadioButton
+                android:id="@+id/radioButtonHobbyConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skillshare_type_hobby_connect"/>
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginBottom="16dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPostTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title (e.g., Learn Guitar, Tennis Partner Needed)"
+                android:inputType="textCapSentences"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginBottom="16dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPostDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description (Provide details)"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="3"
+                android:gravity="top"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category:"
+            android:textSize="16sp"/>
+        <Spinner
+            android:id="@+id/spinnerPostCategory"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Select post category"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginBottom="24dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextContactInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Info (Optional, e.g., 'DM for details')"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonSubmitPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Post"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
